@@ -1,0 +1,25 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    <title>
+        Wellcome page: 
+    </title>
+    <script src="~/Scripts/myjs/UserJavaScript.js"> </script>
+    
+}
+<body>
+    <from name="Wellcome">
+        <input type="text" id="iName" value="Narutobaco"
+               maxlength="50" max=" 30"/>
+        <input type="button" id="btnWellcome" value="Wellcome"
+               onclick="DisplayWellcome(iName.value);"/>
+    </from>
+    <script language="javascript">
+        function DisplayWellCome(msg) {
+            window.document.write("Hello" + msg);
+        }
+        
+    </script>
+
+
+</body>
+

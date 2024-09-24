@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    <title>TINHTIEN</title>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <script languge="javascript">
+        function CalculateTotal() {
+            var dg = parseFloat(document.getElemenById("iPrice").value);
+            var dg = parseFloat(document.getElemenById("iQuantity").value);
+            if
+            document.getElementById("txtTotal").value = dg * sl;
+        }
+    </script>
+}
+<body>
+    NHAP SO LUONG VA DON GIA
+    <from name="ShoppingCart" method="post">
+        Don gia: <input type="number" id="iQuantity" name="Quatity"
+                        min="0"
+                        onchange="CalculateTotal();"
+                        />
+        So luong:<input type=" number" id="iQantity" name="Quantity"
+                        min="1" max="10"/>
+
+    </from>
+</body>
+
